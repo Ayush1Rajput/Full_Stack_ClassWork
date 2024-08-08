@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>My Bio Data</h1>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="first">FirstName : </label>
+      <input id="first" type="text" placeholder="First Name" />
+      <label for="last">LastName : </label>
+      <input id="last" type="text" placeholder="Last  Name" />
+      <br />
+      <br />
+      <label for="male">Male</label>
+      <input type="radio" name="name" id="male" />
+      <label for="male">Female</label>
+      <input type="radio" name="name" id="female" />
+      <label for="other">Other</label>
+      <input type="radio" name="name" id="other" />
+
+      <br />
+      <br />
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="" id="dob" />
+      <br /><br />
+      <label for="email">Email :</label>
+      <input type="email" placeholder="Enter your email" />
+      <br /><br />
+      <label for="no">Phone : </label>
+      <input type="text" placeholder="+91" />
+      <br />
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <legend>Education</legend>
+      <label for="school">School Name : </label>
+      <input id="school" type="text" placeholder="School Name" />
+      <br /><br />
+      <label for="class">Class : </label>
+      <input id="class" type="text" placeholder="Enter CLass" />
+      <br />
+      <br />
+      <label for="select">Subject : </label>
+      <select id="select">
+        <option value="">--Please choose an option--</option>
+        <option value="Science">Science</option>
+        <option value="Math">Math</option>
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+        <option value="Computer">Computer</option>
+      </select>
+
+      <br /><br />
+      <label for="upload"> MarkSheet : </label>
+      <input type="file" />
+      <br />
+    </fieldset>
+    <br /><br />
+    <button>Submit</button>
+  </body>
+</html>
