@@ -1,0 +1,65 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* background-image: radial-gradient(rgb(121, 121, 166), red, green); */
+  /* background-size: 100% 100%; */
+}
+
+p {
+  color: darkred;
+}
+
+/* Decendent Selector */
+
+div p {
+  color: blue;
+}
+
+div span {
+  color: blueviolet;
+}
+
+div p b {
+  color: black;
+  font-size: 1.3rem;
+}
+
+/* Child Selector */
+
+ul > li {
+  color: cadetblue;
+}
+
+/* Imediate Selector */
+
+/* #state + li {
+  color: rgb(27, 2, 189);
+} */
+
+/* li + li {
+  color: hotpink;
+} */
+
+/* General Sibling */
+
+#state ~ li {
+  color: darkgoldenrod;
+}
+
+/* Sudo Class */
+
+a:link {
+  color: rgb(0, 159, 32);
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: black;
+}

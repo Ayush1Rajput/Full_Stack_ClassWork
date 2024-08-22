@@ -1,0 +1,45 @@
+/* Element selector */
+h1 {
+  color: red;
+}
+p {
+  color: rgb(25, 10, 237);
+  background-color: aquamarine;
+}
+
+/* ID selector */
+#spcl {
+  color: rgb(86, 113, 0);
+}
+
+/* Class Selector */
+
+.comman {
+  color: brown;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* Priority Order
+ID >> CLass >> Element(Tags) */
+
+/* body {
+  background-image: linear-gradient(rgb(11, 191, 20), rgb(252, 216, 6));
+} */
+
+/* Atrribute Selector */
+
+a[href="Gemini"] {
+  color: black;
+}
+
+a[href="GitHub"] {
+  color: goldenrod;
+}
+
+/* Universal Selector */
+
+* {
+  /* margin: 0px; */
+  padding: 0;
+}
