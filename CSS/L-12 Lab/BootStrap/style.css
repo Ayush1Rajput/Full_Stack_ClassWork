@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.child {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+form {
+  margin: 40px;
+  color: rgb(1, 1, 10);
+}
