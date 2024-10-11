@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./image/Space.png");
+  background-color: skyblue;
+  /* background-size: cover; */
+  animation-name: bgmove;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes bgmove {
+  100% {
+    background-position: -50000px 0;
+  }
+}
+
+.rocket {
+  /* border: 2px solid white; */
+  height: 250px;
+  width: 250px;
+  transform: rotate(45deg);
+
+  position: absolute;
+  left: 250px;
+  top: 150px;
+
+  /* animation-name: rocketMove;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+   */
+  animation: rocketMove 2s linear 3, rocketRotate 1s ease-in-out 11.5s forwards,
+    rocketLaunch 2s ease-in-out 13.5s forwards;
+}
+
+@keyframes rocketMove {
+  0% {
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 150px;
+  }
+  75% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+.rocket img {
+  height: 100%;
+  /* width: 100%; */
+}
+
+.Astro {
+  width: 200px;
+  height: 200px;
+  /* border: 2px solid red; */
+
+  position: absolute;
+  top: 150px;
+  left: -600px;
+
+  /* animation-name: astroMove;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards; */
+
+  animation: astroMove 8s normal 3s forwards,
+    astroInRocket 1s ease-in 12s forwards;
+}
+
+@keyframes astroMove {
+  0% {
+  }
+
+  100% {
+    left: 250px;
+  }
+}
+
+.Astro img {
+  height: 100%;
+}
+
+@keyframes astroInRocket {
+  100% {
+    left: 300px;
+    transform: scale(0);
+  }
+}
+
+@keyframes rocketRotate {
+  100% {
+    transform: rotate(-50deg);
+  }
+}
+
+@keyframes rocketLaunch {
+  100% {
+    top: -300px;
+  }
+}
+
+@media (max-width: 500px) and (max-height: 100vh) {
+  img {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+  .rocket {
+    height: 100px;
+    width: 100px;
+  }
+  .Astro {
+    height: 100px;
+    width: 100px;
+  }
+}

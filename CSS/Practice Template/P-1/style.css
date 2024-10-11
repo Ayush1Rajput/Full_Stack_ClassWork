@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100vw;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+.title select {
+  /* padding-left: 10px; */
+  margin-left: 10px;
+  height: 30px;
+  width: 4rem;
+  border-radius: 5px;
+}
+input {
+}
+.main {
+  height: 100vh;
+  border: 3px solid blue;
+  width: 100vw;
+}

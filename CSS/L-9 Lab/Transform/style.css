@@ -1,0 +1,41 @@
+.container {
+  background-color: red;
+  height: 250px;
+  width: 250px;
+  margin: 100px auto;
+  color: white;
+
+  border: 5px solid blue;
+  /* transform: rotatex(146deg); */
+  /* transform: rotateY(9deg); */
+  /* transform: rotateZ(45deg); */
+
+  /* transform: translate(100px); */
+  /* transform: translateX(-100px); */
+  /* transform: translateX(100px); */
+  /* transform: translateY(-100px); */
+
+  /* transition-duration: 6s;
+  transition-delay: 2s;
+  transform: rotate(45deg); */
+
+  transform: skew(43deg);
+}
+.container:hover {
+  transform: scale(1.1);
+}
+.container:hover {
+  transition-duration: 6s;
+  transform: rotate(55deg);
+
+  transition-delay: 2s;
+  background-color: rgb(19, 243, 142);
+  box-shadow: 15px 10px 10px rgb(144, 228, 8);
+}
+
+.container {
+  box-shadow: 15px 10px 10px black; /*use for right shadow */
+  /* box-shadow: -15px -10px 10px black; */ /*use for left shadow */
+
+  /* box-shadow: x-axis, y-axis, blur-ratio, color; */
+}
