@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+div {
+  /* border-right: 2px solid black; */
+  padding-left: 20px;
+}
+
+#state {
+  padding-left: 10px;
+}
+#web {
+  border-right: none;
+}
+
+.inp {
+  display: flex;
+}
+.inp input {
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.inp button {
+  height: 30px;
+  width: 70px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
