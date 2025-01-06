@@ -1,0 +1,16 @@
+{
+  "name": "firstexpressapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ayush",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "It is our first backend program where we are starting backend",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
