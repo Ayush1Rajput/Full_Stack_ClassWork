@@ -1,0 +1,29 @@
+body{
+    background-color: blueviolet;
+}
+
+p{
+    font-weight: 700;
+    text-align: center;
+}
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 2px solid black;
+    margin: 20px;
+    background-color: peru;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+div a{
+    /* padding-right: 10px; */
+    padding: 10px;
+}
+
