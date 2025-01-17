@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+      body {
+        background-color: blueviolet;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        border: 2px solid black;
+        margin: 20px;
+        background-color: peru;
+        width: 50vw;
+        border-radius: 10px;
+        margin-top: 30%;
+      }
+      p {
+        font-weight: 700;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>Name : <%=user.username%></p>
+      <hr />
+      <p>Email : <%=user.email%></p>
+      <hr />
+      <p>Password : <%= user.password %></p>
+      <hr />
+      <p>City : <%=user.city%></p>
+      
+    </div>
+  </body>
+</html>
