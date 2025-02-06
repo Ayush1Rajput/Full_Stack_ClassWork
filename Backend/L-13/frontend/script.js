@@ -25,26 +25,17 @@ async function fetchData() {
     }
 }
 
-
-// async function postData(){
-//     const inp = document.getElementById('inp');
-//     let data = inp.value
-//     let res = await axios.post('http://localhost:4000/abc',{data})
-//     console.log(res);
-// }
-// postData()
+fetchData()
 
 
 const form = document.querySelector('form');
+
 form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    let data = document.getElementById('inp').value;
-    let res = await axios.post("http://localhost:4000/abc", { data })
+    e.preventDefault()
+    let data = document.getElementById('inp').value
+    let res = await axios.post('http://localhost:4000/abc', { data })
     console.log(res);
-    container.innerHTML = "";
-
-
+    container.innerHTML = ""
+    fetchData()
+    document.getElementById('inp').value = ""
 })
-
-fetchData()
-

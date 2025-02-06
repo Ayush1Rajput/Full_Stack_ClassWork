@@ -3,8 +3,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors());
-app.use(express.json());
-
+app.use(express.json())
 
 let todos = ['game', 'coding', 'music', 'dance'];
 
@@ -14,8 +13,8 @@ app.get('/todos', (req, res) => {
 
 app.post('/abc', (req, res) => {
     console.log(req.body);
-    todos.push(req.body.data)
-
+    todos.push(req.body.data);
+    res.send('ok')
 })
 
 app.listen(4000, () => {
