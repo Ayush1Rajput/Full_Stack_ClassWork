@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Posts</title>
+  </head>
+  <style>
+    a {
+      text-decoration: none;
+      border: 2px solid black;
+      padding: 3px;
+      border-radius: 10px;
+      background-color: rgb(27, 125, 163);
+      color: white;
+    }
+    li a {
+      width: 50px;
+      height: 50px;
+      border: 2px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: skyblue;
+    }
+    form {
+      margin-top: 20px;
+    }
+    button {
+      background-color: rgb(231, 33, 33);
+      width: 60px;
+      height: 30px;
+    }
+    ul {
+      margin-top: 20px;
+    }
+    li {
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <h1>All Posts</h1>
+    <a href="/posts/new">Create New Post</a>
+    <ul>
+      <% posts.forEach(post => { %>
+      <li>
+        <a href="/posts/<%= post._id %>"><%= post.title %></a>
+        <a href="/posts/<%= post._id %>/edit">Edit</a>
+        <form action="/posts/<%= post._id %>/delete" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
