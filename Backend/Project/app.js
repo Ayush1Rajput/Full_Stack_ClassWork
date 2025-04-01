@@ -58,6 +58,9 @@ app.use(productRoutes)
 const reviewRoutes = require('./router/review');
 app.use(reviewRoutes);
 
+const authRoutes = require('./router/auth');
+app.use(authRoutes);
+
 const PORT = 5000;
 app.listen(PORT, () => {
     console.log('server run at port', PORT)
