@@ -1,19 +1,7 @@
 const { required } = require('joi');
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
-
-
 const userSchema = new mongoose.Schema({
-    // username: {
-    //     type: String,
-    //     trim: true,
-    //     required: true
-    // },
-    // password: {
-    //     type: String,
-    //     trim: true,                     // These two thing write by passportLocalMongoose by self
-    //     required: true
-    // },
     email: {
         type: String,
         trim: true,
@@ -21,13 +9,22 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        trim: true,
         required: true
-    }
+    },
+    cart: [
+        {
+            productId: {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "Product"
+            },
+            quantity: {
+                type: Number,
+                default: 1,
+            }
+        }
+    ]
 })
 
 userSchema.plugin(passportLocalMongoose);
-
-const User = mongoose.model("User", userSchema)
-
+const User = mongoose.model('User', userSchema);
 module.exports = User;

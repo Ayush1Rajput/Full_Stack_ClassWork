@@ -14,6 +14,7 @@
       <h5 class="card-title"><%= product.price %></h5>
       <p class="card-text"><%= product.desc %></p>
       <a href="/products/<%= product._id %>" class="btn btn-primary">Show</a>
+      <% if(currUser?.role=="seller"){ %>
       <a href="/products/<%= product._id %>/edit" class="btn btn-warning"
         >Edit</a
       >
@@ -24,6 +25,11 @@
       >
         <button class="btn btn-danger">Delete</button>
       </form>
+      <% } %> <% if(currUser?.role=="buyer"){ %>
+      <a href="/users/cart/add/<%= product._id %>" class="btn btn-success"
+        >Add to cart</a
+      >
+      <% } %>
     </div>
   </div>
   <%} %>
