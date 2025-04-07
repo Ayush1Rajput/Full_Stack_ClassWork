@@ -8,6 +8,22 @@
     <title>Document</title>
   </head>
   <body>
-    <%= user.productId %>
+    <% for(let product of cart){ %>
+    <!-- <h3>Product Id :<%= product %></h3> -->
+
+    <h3>Product Id :<%= product._id %></h3>
+    <h3>Product Name :<%= product.productId.name %></h3>
+    <img
+      src="<%=product.productId.image%>"
+      alt=""
+      width="100px"
+      height="100px"
+    />
+    <h2>Price : ₹<%= product.productId.price * product.quantity %></h2>
+
+    <h3>Quantity :<%= product.quantity %></h3>
+    <hr />
+
+    <%}%>
   </body>
 </html>
